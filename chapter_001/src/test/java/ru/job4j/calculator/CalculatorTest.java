@@ -1,16 +1,16 @@
 package ru.job4j.calculator;
 
-/**
- * Тест простейшего калькулятора.
- * @author Dmitry Nikolaev (dymy@yandex.ru)
- * @since 2018-11-10
- *
- */
+
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Тест простейшего калькулятора.
+ * @author Dmitry Nikolaev (dymy@yandex.ru)
+ * @since 2018-11-10
+ */
 public class CalculatorTest {
 
     /**
