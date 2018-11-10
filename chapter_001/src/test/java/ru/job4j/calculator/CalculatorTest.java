@@ -1,11 +1,21 @@
 package ru.job4j.calculator;
 
+/**
+ * Тест простейшего калькулятора.
+ * @author Dmitry Nikolaev (dymy@yandex.ru)
+ * @since 2018-11-10
+ *
+ */
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {
+
+    /**
+     * Метод проверки метода add класса calculator - "сложения двух чисел"
+     */
     @Test
     public void whenAddOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
@@ -14,6 +24,10 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
+
+    /**
+     * Метод проверки метода subtract класса calculator - "вычитание"
+     */
     @Test
     public void whenAddOneSubtractOneThenTwo() {
         Calculator calc = new Calculator();
@@ -22,6 +36,10 @@ public class CalculatorTest {
         double expected = 7D;
         assertThat(result, is(expected));
     }
+
+    /**
+     * Метод проверки метода div класса calculator - "деление"
+     */
     @Test
     public void whenAddOneDivThenTwo() {
         Calculator calc = new Calculator();
@@ -30,6 +48,10 @@ public class CalculatorTest {
         double expected = 4.5D;
         assertThat(result, is(expected));
     }
+
+    /**
+     * Метод проверки метода multiple класса calculator - "умножение"
+     */
     @Test
     public void whenAddOneMultipleOneThenTwo() {
         Calculator calc = new Calculator();
