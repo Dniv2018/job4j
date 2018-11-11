@@ -6,9 +6,9 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class ConverterTest {
-    int rublToDoll = 60;
-    int rublToEuro = 70;
-    int toRubl = 37;
+    final int rublToDoll = 60;
+    final int rublToEuro = 70;
+    final int toRubl = 37;
 
     /**
      * Тест перевода рублей в доллары
