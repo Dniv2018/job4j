@@ -11,6 +11,6 @@ public class PointTest {
         Point a = new Point(0, 1);
         Point b = new Point(2, 5);
         double result = a.distanceTo(b);
-        assertThat(result, closeTo(4.47, 0.01));     // так как мы работаем с dounble, а результат ожидается с числами после запятой
-    }                                               // то используем closeTo что-бы округлить результат
+        assertThat(result, closeTo(4.47, 0.01));
+    }
 }
