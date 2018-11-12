@@ -1,15 +1,16 @@
 package ru.job4j.condition;
 
 import org.junit.Test;
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 
 public class PointTest {
 
     @Test
-    public void aDistToB() {
-        Point first = new Point(0,1);
-        Point second = new Point (2,5);
-        assertThat(first.distanceTo(second), is(4.47213595499958));
-    }
+    public void whenFrom0p1To2p5Then4p47() {
+        Point a = new Point(0, 1);
+        Point b = new Point(2, 5);
+        double result = a.distanceTo(b);
+        assertThat(result, closeTo(4.47, 0.01));     // так как мы работаем с dounble, а результат ожидается с числами после запятой
+    }                                               // то используем closeTo что-бы округлить результат
 }
