@@ -5,7 +5,9 @@ package ru.job4j.condition;
  * @since 0.1
  */
 public class Point {
+    @SuppressWarnings("CanBeFinal")
     private int x;
+    @SuppressWarnings("CanBeFinal")
     private int y;
 
     public Point(int x, int y) {
