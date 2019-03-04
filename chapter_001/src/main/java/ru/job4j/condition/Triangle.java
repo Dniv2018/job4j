@@ -1,5 +1,10 @@
 package ru.job4j.condition;
 
+/**
+ * @author Petr Arsentev (parsentev@yandex.ru), Dmitry Nikolaev (dymy@yandex.ru)
+ * @version $Id$
+ * @since 0.1
+ */
 public class Triangle {
     private Point a;
     private Point b;
@@ -24,7 +29,7 @@ public class Triangle {
      * @return Периметр.
      */
     public double period(double ab, double ac, double bc) {
-        return -1; // вместо -1 нужно написать формулу вычисляющую полупериметр.
+        return (ab + ac + bc)/2; // вместо -1 нужно написать формулу вычисляющую полупериметр.
     }
 
     /**
@@ -40,7 +45,7 @@ public class Triangle {
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             // написать формулу для расчета площади треугольника.
-            rsl = ... //вместо многоточия нужно написать формулу Герона с подставленными переменными ab, ac, bc, p.
+            rsl = Math.sqrt(p*(p-ab)*(p-ac)*(p-bc)); //вместо многоточия нужно написать формулу Герона с подставленными переменными ab, ac, bc, p.
             // Для извлечение квадратного корня надо использовать метод Math.sqrt()
         }
         return rsl;
@@ -55,9 +60,10 @@ public class Triangle {
      * @param ab Длина от точки a до точки b.
      * @param ac Длина от точки a до точки c.
      * @param bc Длина от точки b до точки c.
-     * @return
+     * @return exist boolean
      */
     private boolean exist(double ab, double ac, double bc) {
+        if ab != ac+bc
         return false;
     }
 }
