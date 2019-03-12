@@ -26,7 +26,7 @@ public class MaxTest {
         int result = maxim.max(2, 1);
         assertThat(result, is(2));
     }
--
+
     /**
      * Проверка если числа равны
      */
