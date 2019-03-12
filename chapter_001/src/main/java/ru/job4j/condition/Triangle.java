@@ -41,7 +41,7 @@ public class Triangle {
         }
         return rsl;
     }
-
+//
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
      *
@@ -53,7 +53,8 @@ public class Triangle {
      * @return Площадь треугольника
      */
     private boolean exist(double a, double c, double b) {
-        if ((a>0 & b>0 & c >0) & ((a != b+c) || (b != a+c) || (c != a + b))) return true;
-        else return false;
+        return ((a>0 & b>0 & c >0) & ((a != b+c) || (b != a+c) || (c != a + b)));
+//        if ((a>0 & b>0 & c >0) & ((a != b+c) || (b != a+c) || (c != a + b))) return true;
+//        else return false;
     }
 }
