@@ -121,6 +121,7 @@ public class Paint {
         );
     }
 
+    @SuppressWarnings("SpellCheckingInspection")
     private String loopBy(int height, int widht, BiPredicate<Integer, Integer> predict) {
         StringBuilder screen = new StringBuilder();
         for (int row = 0; row != height; row++) {

@@ -1,5 +1,6 @@
 package ru.job4j.array;
 
+@SuppressWarnings("ConstantConditions")
 public class ArrayChar {
 
     /**
