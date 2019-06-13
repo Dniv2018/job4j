@@ -9,13 +9,13 @@ public class FactorialTest {
     @Test
     public void whenCalculateFactorialForFiveThenOneHundredTwenty() {
        Factorial result = new Factorial();
-       assertThat (result.calc(5), is(120));//напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
+       assertThat(result.calc(5), is(120)); //напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
     }
 
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
         Factorial result = new Factorial();
-        assertThat (result.calc(0), is(1));
+        assertThat(result.calc(0), is(1));
         //напишите здесь тест, проверяющий, что факториал для числа 0 равен 1.
     }
 }

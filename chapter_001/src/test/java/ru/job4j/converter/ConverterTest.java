@@ -17,7 +17,7 @@ public class ConverterTest {
     public void when6792RubleToDollarThen1() {
         Converter converter = new Converter();
         int result = (int) converter.rubleToDollar(this.rublToDoll);
-        assertThat(result, is((int) (rublToDoll/67.92d)));
+        assertThat(result, is((int) (rublToDoll / 67.92d)));
     }
     /**
      * Тест перевода рублей в евро
@@ -26,7 +26,7 @@ public class ConverterTest {
     public void when7700RubleToEuroThen1() {
         Converter converter = new Converter();
         int result = (int) converter.rubleToEuro(this.rublToEuro);
-        assertThat(result, is((int) (rublToEuro/77.00d)));
+        assertThat(result, is((int) (rublToEuro / 77.00d)));
     }
     /**
      * Тест перевода долларов в рубли
@@ -35,7 +35,7 @@ public class ConverterTest {
     public void when6792DollarToRublThen1() {
         Converter converter = new Converter();
         int result = (int) converter.dollarToRubl(this.toRubl);
-        assertThat(result, is((int) (toRubl*67.92d)));
+        assertThat(result, is((int) (toRubl * 67.92d)));
     }
     /**
      * Тест перевода евро в рубли
@@ -44,6 +44,6 @@ public class ConverterTest {
     public void when7700EuroToRublThen1() {
         Converter converter = new Converter();
         int result = (int) converter.euroToRubl(this.toRubl);
-        assertThat(result, is((int) (toRubl*77.00d)));
+        assertThat(result, is((int) (toRubl * 77.00d)));
     }
 }
