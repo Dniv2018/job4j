@@ -8,11 +8,13 @@ package ru.job4j.array;
 public class Check {
     public boolean mono(boolean[] data) {
         boolean broker = data[data.length - 1];
+        boolean result = true;
         for (boolean i: data) {
             if (i ^ broker) {
-                return false;
+                result = false;
+                break;
             }
         }
-        return true;
+        return result;
     }
 }
