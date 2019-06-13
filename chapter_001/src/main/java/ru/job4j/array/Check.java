@@ -12,7 +12,7 @@ public class Check {
         for (boolean i: data) {
             if (i ^ broker) {
                 result = false;
-                break;
+                break; //
             }
         }
         return result;
