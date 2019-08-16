@@ -1,17 +1,5 @@
 package ru.job4j.calculator;
-<<<<<<< HEAD
 
-public class Calculator {
-
-    public static int add(int first, int second) {
-        int result =  first + second;
-        System.out.println(first + "+" + second + " = " + result);
-        return result;
-    }
-
-    public static void main(String[] args) {
-        add(1, 1);
-=======
 /**
  * Простейший калькулятор.
  * @author Dmitry Nikolaev (dymy@yandex.ru)
@@ -62,6 +50,5 @@ public class Calculator {
      */
     public double getResult() {
         return this.result;
->>>>>>> 10fb50ae7d1e3edbd47fe6939990902f86b66dac
     }
 }
