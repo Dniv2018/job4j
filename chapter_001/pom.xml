@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,4 +13,16 @@
     <artifactId>chapter_001</artifactId>
 
 
+=======
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <artifactId>chapter_001</artifactId>
+   <version>2.0</version>
+   <packaging>jar</packaging>
+   <parent>
+       <groupId>ru.job4j</groupId>
+       <artifactId>junior</artifactId>
+       <version>2.0</version>
+    </parent>
+>>>>>>> 10fb50ae7d1e3edbd47fe6939990902f86b66dac
 </project>
