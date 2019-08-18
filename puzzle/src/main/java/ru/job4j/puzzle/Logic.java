@@ -70,57 +70,27 @@ public class Logic {
 
     public boolean isWin() {
         int[][] table = this.convert();
-        boolean result = false;
         boolean resGorizontal = true;
         boolean resVertical = true;
-        //int point = 0;
+
         int len = table.length;
-        // Находим точку предполагаемой линии
-        for (int i = 0; i < len; i++) {
-            if (table[i][i] == 1) {
-                //int point = i;
-                // Проверка горизонтальной линии
+        for (int p = 0; p < len; p++) {
+            // Находим точку предполагаемой линии
+            if (table[p][p] == 1) {
                 for (int j = 0; j < len; j++) {
                     // Проверка горизонтальной линии
-                    if (table [i][j] != 1) {
+                    if (table [p][j] == 0) {
                         resGorizontal = false;
-                        break;
                     }
                     // Проверка вертикальной линии
-                    if (table [j][i] != 1) {
+                    if (table [j][p] == 0) {
                         resVertical = false;
-                        break;
                     }
                 }
-                // Проверка вертикальной линии
-//                for (int j = 0; j < len; j++) {
-//                    if (table [j][i] != 1) {
-//                        resVertical = false;
-//                        break;
-//                    }
-//                }
-                result = resGorizontal ^ resVertical;
                 break;
             }
         }
-        //boolean result = resGorizontal ^ resVertical;
-//        // Проверка горизонтальной линии
-//        for (int i=0; i<len; i++){
-//            if (table [point][i] != 1) {
-//                resGorizontal = false;
-//                break;
-//            }
-//        }
-//        // Проверка вертикальной линии
-//        for (int i=0; i<len; i++){
-//            if (table [i][point] != 1) {
-//                resVertical = false;
-//                break;
-//            }
-//        }
-//        result = resGorizontal ^ resVertical;
-
-        return result;
+        return resGorizontal ^ resVertical;
     }
 
     public int[][] convert() {
