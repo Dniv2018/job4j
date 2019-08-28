@@ -75,14 +75,11 @@ public class Logic {
 
         int len = table.length;
         for (int p = 0; p < len; p++) {
-            // Находим точку предполагаемой линии
             if (table[p][p] == 1) {
                 for (int j = 0; j < len; j++) {
-                    // Проверка горизонтальной линии
                     if (table [p][j] == 0) {
                         resGorizontal = false;
                     }
-                    // Проверка вертикальной линии
                     if (table [j][p] == 0) {
                         resVertical = false;
                     }

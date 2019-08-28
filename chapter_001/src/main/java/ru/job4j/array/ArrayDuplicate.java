@@ -12,17 +12,16 @@ public class ArrayDuplicate {
      * @return символьный массив без дубликатов.
      */
     public String[] remove(String[] array) {
-        int len = array.length - 1; // максимальный индекс массива
-        int count = 0; // счетчик дубликатов
+        int len = array.length - 1;
+        int count = 0;
         for (int j = 0; j <= len - count; j++) {
             for (int i = j + 1; i <= len - count; i++) {
                 if (array[i].equals(array[j])) {
-                    for (int a = i; a < len - count; a++) { // сдвигаем все элементы массива на 1 влево
+                    for (int a = i; a < len - count; a++) {
                         array[a] = array[a + 1];
                     }
-                    ++count; // увеличиваем счетчик повторов на 1
-                    --i; // уменьшаем счетчик проверяемой позиции на 1, чтобы начать проверку с прежней позиции,
-                         // где хранится уже новое значение
+                    ++count;
+                    --i;
                 }
             }
         }

@@ -6,7 +6,6 @@ package ru.job4j.array;
  * @since 2019-06-12
  */
 public class BubbleSort {
-
     public int[] sort(int[] fury) {
         int broker;
         int len = fury.length - 1;

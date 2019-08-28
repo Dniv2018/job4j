@@ -37,12 +37,10 @@ public class Triangle {
         double c = point.distance(x1, y1, x3, y3);
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
-            // написать формулу для расчета площади треугольника.
             rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return rsl;
     }
-//
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
      *
@@ -55,7 +53,5 @@ public class Triangle {
      */
     private boolean exist(double a, double c, double b) {
         return ((a > 0 & b > 0 & c > 0) & ((a != b + c) || (b != a + c) || (c != a + b)));
-//        if ((a>0 & b>0 & c >0) & ((a != b+c) || (b != a+c) || (c != a + b))) return true;
-//        else return false;
     }
 }

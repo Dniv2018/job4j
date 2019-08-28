@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class MergeTwoArrayTest {
 
     @Test
-    public void whenTwoVoid(){
+    public void whenTwoVoid() {
         MergeTwoArray arrayVoid = new MergeTwoArray();
         int[] firstArray = {};
         int[] secondArray = {};
@@ -17,7 +17,7 @@ public class MergeTwoArrayTest {
     }
 
     @Test
-    public void whenFistMoreSecond(){
+    public void whenFistMoreSecond() {
         MergeTwoArray array = new MergeTwoArray();
         int[] firstArray = {1, 3, 4, 6, 50};
         int[] secondArray = {0, 60};
@@ -27,7 +27,7 @@ public class MergeTwoArrayTest {
     }
 
     @Test
-    public void whenSecondMoreFirst(){
+    public void whenSecondMoreFirst() {
         MergeTwoArray array = new MergeTwoArray();
         int[] firstArray = {0, 60};
         int[] secondArray = {1, 3, 4, 6, 50};
@@ -70,7 +70,7 @@ public class MergeTwoArrayTest {
     public void whenFirstAndSecondInOrder() {
         MergeTwoArray array = new MergeTwoArray();
         int[] firstArray = {1, 2, 3};
-        int[] secondArray = {4, 5 , 6};
+        int[] secondArray = {4, 5, 6};
         int[] result = array.mergeTwoArray(firstArray, secondArray);
         int[] expect = {1, 2, 3, 4, 5, 6};
         assertThat(result, is(expect));
