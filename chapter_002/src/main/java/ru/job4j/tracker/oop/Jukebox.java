@@ -15,7 +15,6 @@ public class Jukebox {
 
         System.out.println(song);
     }
-
     public static void main(String[] args) {
         Jukebox musbox = new Jukebox();
         musbox.music(0);
