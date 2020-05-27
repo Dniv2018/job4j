@@ -10,7 +10,7 @@ public class Cat {
         System.out.println(this.food);
     }
 
-    public void giveNick(String nick){
+    public void giveNick(String nick) {
         this.name = nick;
     }
 
