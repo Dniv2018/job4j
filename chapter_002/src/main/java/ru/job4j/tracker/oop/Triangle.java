@@ -41,7 +41,8 @@ public class Triangle {
      */
 
     public boolean exist(double ab, double ac, double bc) {
-        return ((ab > 0 & bc > 0 & ac > 0) & ((ab != bc + ac) || (bc != ab + ac) || (ac != ab + bc)));
+        //return ((ab > 0 & bc > 0 & ac > 0) & ((ab != bc + ac) || (bc != ab + ac) || (ac != ab + bc)));
+        return ((ab + bc > ac) || (bc + ac > ab) || (ac + ab > bc));
         //return false;
     }
 
