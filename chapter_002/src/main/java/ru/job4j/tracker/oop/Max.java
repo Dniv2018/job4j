@@ -25,8 +25,9 @@ public class Max {
      * @return Большее из чисел.
      */
     public int max(int first, int second, int third) {
-        int result = max(second, third);
-        return first > result ? first : result;
+        return max(first, max(second, third));
+        //int result = max(second, third);
+        //return first > result ? first : result;
     }
     /**
      * Находит большее из чисел.
@@ -37,7 +38,8 @@ public class Max {
      * @return Большее из чисел.
      */
     public int max(int first, int second, int third, int fourth) {
-        int result = max(second, third, fourth);
-        return first > result ? first : result;
+        return max(first, max(second, third, fourth));
+        //int result = max(second, third, fourth);
+        //return first > result ? first : result;
     }
 }
