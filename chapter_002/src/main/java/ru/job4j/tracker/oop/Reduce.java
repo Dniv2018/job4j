@@ -3,11 +3,11 @@ package ru.job4j.tracker.oop;
 // Имена Массивов изменены для лучшего понимания процесса работы программы
 
 public class Reduce {
-    private int[] arrayClass;
+    private int[] array;
     //private int[] array;
 
     public void to(int[] array) {
-        arrayClass = array;
+        this.array = array;
 
         //Ошибка была здесь:
         // array = array;
@@ -17,8 +17,8 @@ public class Reduce {
     }
 
     public void print() {
-        for (int index = 0; index < arrayClass.length; index++) {
-            System.out.println(arrayClass[index]);
+        for (int index = 0; index < array.length; index++) {
+            System.out.println(array[index]);
         }
         //for (int index = 0; index < array.length; index++) {
         //    System.out.println(array[index]);
