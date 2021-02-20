@@ -2,7 +2,7 @@ package ru.job4j.tracker.oop;
 
 public class Item {
     private String name;
-    int id;
+    private int id;
 
     public Item() {
     }
